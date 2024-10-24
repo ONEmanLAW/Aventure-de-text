@@ -23,8 +23,13 @@ function jouerScene($sceneId) {
       echo ($i + 1) . ". " . ucfirst($options[$i]) . "\n";
     }
 
-    echo "\nFais ton choix (1 à " . count($options) . ") : ";
+    echo "\nFais ton choix (1 à " . count($options) . ") ou tape 'exit' pour quitter : ";
     $choixUtilisateur = trim(fgets(STDIN));
+
+    if (strtolower($choixUtilisateur) === 'exit') {
+      echo "Tu as quitté le jeu.\n";
+      exit;
+    }
 
     if (!is_numeric($choixUtilisateur) || $choixUtilisateur < 1 || $choixUtilisateur > count($options)) {
       echo "Choix invalide, essaie encore.\n";
