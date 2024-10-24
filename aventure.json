@@ -1,0 +1,38 @@
+{
+  "scenes": {
+    "start": {
+      "text": "Tu te réveilles dans une forêt sombre. Il fait froid et tu ne sais pas comment tu es arrivé là. Tu vois deux chemins devant toi.",
+      "next_scene": "left_or_right"
+    },
+    "left_or_right": {
+      "text": "Choisis un chemin. Le chemin de gauche semble plus sombre, tandis que celui de droite paraît plus dangereux.",
+      "options": {
+        "left": "left_path",
+        "right": "right_path"
+      }
+    },
+    "left_path": {
+      "text": "Tu choisis le chemin de gauche et avances dans l'obscurité. Tu entends des bruits étranges autour de toi.",
+      "next_scene": "danger_in_the_dark"
+    },
+    "right_path": {
+      "text": "Tu choisis le chemin de droite. Après quelques mètres, tu vois un vieux pont suspendu. Il semble fragile.",
+      "next_scene": "bridge_decision"
+    },
+    "danger_in_the_dark": {
+      "text": "Tu avances prudemment, mais une bête sauvage surgit des buissons et te dévore... Tu es mort.",
+      "end": true
+    },
+    "bridge_decision": {
+      "text": "Tu arrives au pont. Que fais-tu ? Traverser le pont ou rebrousser chemin ?",
+      "options": {
+        "cross": "cross_bridge",
+        "return": "start"
+      }
+    },
+    "cross_bridge": {
+      "text": "Tu tentes de traverser le pont, mais il craque sous ton poids et s'effondre. Tu tombes dans la rivière et te noies... Tu es mort.",
+      "end": true
+    }
+  }
+}
