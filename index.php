@@ -13,14 +13,24 @@ $couleurs = [
 $json = file_get_contents('aventure.json');
 $aventure = json_decode($json, true);
 
+
+function afficherTexteAvecDelai($texte, $couleurs, $couleur = 'reset') {
+  $texteColorise = $couleurs[$couleur] . $texte . $couleurs['reset'];
+  foreach (str_split($texteColorise) as $caractere) {
+    echo $caractere;
+    usleep(10000); // 10ms
+  }
+  echo "\n";
+}
+
 function jouerScene($sceneId, $couleurs) {
   global $aventure;
 
   $scene = $aventure['scenes'][$sceneId];
-  echo $couleurs['bleu'] . $scene['text'] . $couleurs['reset'] . "\n\n";
+  afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
 
   if (isset($scene['end']) && $scene['end'] === true) {
-    echo $couleurs['rouge'] . "C FINI RENTRE CHEZ TOI." . $couleurs['reset'] . "\n";
+    afficherTexteAvecDelai("C FINI RENTRE CHEZ TOI.", $couleurs, 'rouge');
     return;
   }
 
@@ -30,19 +40,19 @@ function jouerScene($sceneId, $couleurs) {
     $options = array_keys($scene['options']);
 
     for ($i = 0; $i < count($options); $i++) {
-      echo $couleurs['vert'] . ($i + 1) . ". " . ucfirst($options[$i]) . $couleurs['reset'] . "\n";
+      afficherTexteAvecDelai(($i + 1) . ". " . ucfirst($options[$i]), $couleurs, 'vert');
     }
 
-    echo "\nFais ton choix (1 à " . count($options) . ") ou tape 'exit' pour quitter TAPETTE : ";
+    afficherTexteAvecDelai("Fais ton choix (1 à " . count($options) . ") ou tape 'exit' pour quitter TAPETTE : ", $couleurs, 'jaune');
     $choixUtilisateur = trim(fgets(STDIN));
 
     if (strtolower($choixUtilisateur) === "exit") {
-      echo $couleurs['rouge'] . "TROP triste que tu partent !" . $couleurs['reset'] . "\n";
+      afficherTexteAvecDelai("TROP triste que tu partent !", $couleurs, 'rouge');
       exit;
     }
 
     if (!is_numeric($choixUtilisateur) || $choixUtilisateur < 1 || $choixUtilisateur > count($options)) {
-      echo $couleurs['rouge'] . "T CON OU QUOI Choix invalide, essaie encore." . $couleurs['reset'] . "\n";
+      afficherTexteAvecDelai("T CON OU QUOI Choix invalide, essaie encore.", $couleurs, 'rouge');
       jouerScene($sceneId, $couleurs);
     } else {
       $choixSuivant = $options[$choixUtilisateur - 1];
