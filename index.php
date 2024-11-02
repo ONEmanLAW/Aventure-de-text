@@ -18,14 +18,24 @@ function afficherTexteAvecDelai($texte, $couleurs, $couleur = 'reset') {
   $texteColorise = $couleurs[$couleur] . $texte . $couleurs['reset'];
   foreach (str_split($texteColorise) as $caractere) {
     echo $caractere;
-    usleep(10000); // 10ms
+    usleep(10000);
   }
   echo "\n";
+}
+
+function clearScreen() {
+  echo "\033[2J\033[;H";
+}
+
+function pause() {
+  echo "\nAppuie sur Entrée pour continuer...";
+  fgets(STDIN);
 }
 
 function jouerScene($sceneId, $couleurs) {
   global $aventure;
 
+  clearScreen();
   $scene = $aventure['scenes'][$sceneId];
   afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
 
@@ -35,6 +45,7 @@ function jouerScene($sceneId, $couleurs) {
   }
 
   if (isset($scene['next_scene'])) {
+    pause();
     jouerScene($scene['next_scene'], $couleurs);
   } elseif (isset($scene['options'])) {
     $options = array_keys($scene['options']);
@@ -61,6 +72,7 @@ function jouerScene($sceneId, $couleurs) {
   }
 }
 
+// Démarrer l'aventure
 jouerScene('start', $couleurs);
 
 ?>
