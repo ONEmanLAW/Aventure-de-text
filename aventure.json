@@ -156,6 +156,10 @@
     "perd":{
       "text":"-Dommage monsieur, vous avez perdu. \n Vous sortez du salon et regagnez votre chambre les indices tournent dasn votre tête mais vous n'arrivez pas à en faire sens. A l'exterieur la tempète ce calme et vous entendez des sirènes de polices au loin. Quelqu'un à du les appeler enfin. Malheureusement il ne trouverons jamais le tueur et celui-ci restera introuvable. \n\n VOUS AVEZ ÉCHOUÉ ",
       "end": true
+    },
+    "victory": {
+      "text": "Félicitations ! Tu as traversé le pont en toute sécurité et trouvé une sortie vers la liberté. Tu as gagné !",
+      "end": true
     }
   }
 }
