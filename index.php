@@ -118,7 +118,6 @@ function jouerScene($sceneId, $couleurs, $nomSauvegarde) {
     afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
   }
   
-  afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
   pause(); 
 
   $scenesParcourues[] = ['id' => $sceneId, 'text' => $scene['text'], 'image' => isset($scene['image']) ? $scene['image'] : null];

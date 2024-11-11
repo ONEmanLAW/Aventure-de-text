@@ -1,4 +1,5 @@
 <?php
+include "index.php";
 $standH = 0;
 $standC = 0;
 $cardsN = [2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, 10, "A", "A", "A", "A"];
@@ -453,7 +454,7 @@ function startBlackjack() {
 }
 
 function tirer() {
-  global $yoHand, $nestorHand, $couleurs;
+  global $yoHand, $nestorHand, $couleurs,$nomSauvegarde;
   echo "Main de Nestor : ";
   echo $nestorHand[0];
   echo "
@@ -470,9 +471,9 @@ function tirer() {
     echo $e;
   }
   if (countValues("you")>21) {
-    jouerScene("gagne", $couleurs);
+    jouerScene("gagne", $couleurs,$nomSauvegarde);
   }else if (countValues("you")===21){
-    jouerScene("perd", $couleurs);
+    jouerScene("perd", $couleurs,$nomSauvegarde);
   }
 }
 
@@ -515,7 +516,7 @@ function countValues($valueOfWho){
 }
 
 function refuser() {
-  global $yoHand, $nestorHand, $couleurs;
+  global $yoHand, $nestorHand, $couleurs, $nomSauvegarde;
   echo "Main de Nestor : ";
   foreach ($nestorHand as $el) {
     echo $el;
@@ -525,9 +526,9 @@ function refuser() {
     echo $e;
   }
   if (countValues("Nestor")<countValues("you")) {
-    jouerScene("gagne", $couleurs);
+    jouerScene("gagne", $couleurs,$nomSauvegarde);
   }else{
-    jouerScene("perd", $couleurs);
+    jouerScene("perd", $couleurs,$nomSauvegarde);
   }
 }
 ?>
