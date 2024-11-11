@@ -84,6 +84,13 @@
       "text":"Vous vous rendez dans la chambre d'Henri. En ouvrant vous découvrez le corps d'Henri recouvert d'un drap blanc. En vous approchant vous appercevez un tache de sang au niveau de sa tête. Là où l'attaquant à frappé sans aucun doute. Vous vous rendez d'abords au bureau d'Henri au fond de la chambre sous une grande fenêtre. En vous approchant vous réalisez qu'il est complètement sans-dessus-dessous. La plupart des tiroirs sont ouvert, tout les pots à crayon sont renversé et une montagne de papiers s'amasse sur le bureau. D'ailleur il y'a presque plus de papier éparpillé sur le sol que sur le bureau. Visiblement quelqun l'a fouillé la nuit du meurtre. Mais qui et pourquoi ? La fenêtre de la chambre d'Henri est absolument gigantesque. Il ne manque plus que des vitraux pour se croire dans une cathédrale ! Malheureusement on ne voit pas grand chose à travers à cause de la tempête. Cependant en regardant en bas vous appercevez quelque chose dans la boue... Ce sont des traces de pas.  Après avoir refait un tour pour être sûr de n'avoir rien raté vous sortez de la chambre et regagnez le salon. Vous découvrez alors, a votre grande surprise, que tout le monde est parti, tout le monde sauf Nestor, le majordome. Celui-ci est ranquillement entrain de jouer au cartes sur la table du salon.\n-Où sont parti les invités ? demandez-vous. \n-La plupart ont regagné leur chambre monsieur.\nVous soupirez de fatigue. Nestor doit comprendre votre détresse puisque celui-ci demande : \n-Puis-je proposer à monsieur une partie de blackjack pour vous aidez à penser à autre chose ?  ",
       "options":{
         "Oui":"Oui",
+        "Non":"Non",
+        "Peux-tu me rappeler les rêgles s'il te plait ?":"Peux-tu me rappeler les rêgles s'il te plait ?"
+      }
+    },"Peux-tu me rappeler les rêgles s'il te plait ?":{
+      "text":"Le blackjack est un jeu de cartes fort apprécié, où l’objectif, pour chaque joueur, est de constituer une main dont la valeur approche le nombre 21, sans jamais le dépasser, et ce, en surclassant celle du croupier. Les cartes numérotées de 2 à 10 valent leur chiffre respectif, tandis que les figures – valet, dame et roi – se voient attribuer une valeur de 10. Quant à l’as, il revêt la particularité de pouvoir valoir 1 ou 11, selon ce qui favorise le mieux le joueur. Le jeu débute avec la distribution de deux cartes à chaque joueur ainsi qu’au croupier, dont une carte reste dissimulée. Ensuite, chaque participant peut choisir de « tirer » une carte supplémentaire pour se rapprocher de 21 ou de « refuser » s'il juge sa main suffisamment forte. Seriez-vous intéressé de faire une partie ?",
+      "options":{
+        "Oui":"Oui",
         "Non":"Non"
       }
     },
