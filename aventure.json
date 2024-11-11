@@ -106,6 +106,9 @@
         "Chercher plus d'indices dans la chambre d'Henri":"Chercher plus d'indices dans la chambre d'Henri",
         "Carole à tué Henri avec la clé à molette":"Carole à tué Henri avec la clé à molette"
       }
+    },"Carole à tué Henri avec la clé à molette":{
+      "text":"Vous et les invités avez enfermé Carole dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Carole n'étais pas la tueuse. Et que le vrai tueur est introuvable. \n Vous avez echoué.",
+      "end":true
     },"Chercher des indices dans la chambre d'Alban":{
       "text":"Vous vous rendez dans la chambre d'Alban malgré ses plaintes. Vous avez beau fouiller la chambre de fond en comble vous ne trouvez rien d'incriminant.",
       "options":{
