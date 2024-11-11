@@ -136,7 +136,7 @@
         "Refuser":"Refuser"
       }
     },"Non":{
-      "text":"Vous refusez poliment et vous dirigez vers votre chambre. Mais à peine avez-vous passé le seuil de votre porte que quelqu'un vous agrippe par derrière et vous dit : \n -pardon ce n'étais pas censé se passer comme ça mais tu as trop fouiné.\n\n VOUS ÊTES MORT",
+      "text":"Vous refusez poliment et vous dirigez vers votre chambre. Mais à peine avez-vous passé le seuil de votre porte que quelqu'un vous agrippe par derrière et vous dit : \n -Pardon ce n'étais pas censé se passer comme ça mais tu as trop fouiné.\n\n VOUS ÊTES MORT",
       "end": true
     },
     "Tirer":{
