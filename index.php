@@ -12,13 +12,17 @@ $couleurs = [
 
 $json = file_get_contents('aventure.json');
 $aventure = json_decode($json, true);
+$dossierSauvegardes = 'sauvegardes';
 
+if (!file_exists($dossierSauvegardes)) {
+  mkdir($dossierSauvegardes);
+}
 
 function afficherTexteAvecDelai($texte, $couleurs, $couleur = 'reset') {
   $texteColorise = $couleurs[$couleur] . $texte . $couleurs['reset'];
   foreach (str_split($texteColorise) as $caractere) {
     echo $caractere;
-    usleep(10000);
+    usleep(5000);
   }
   echo "\n";
 }
@@ -32,21 +36,55 @@ function pause() {
   fgets(STDIN);
 }
 
-function jouerScene($sceneId, $couleurs) {
+function sauvegarderProgression($sceneId, $nomSauvegarde) {
+  global $dossierSauvegardes;
+  $cheminSauvegarde = "$dossierSauvegardes/sauvegarde_$nomSauvegarde.json";
+  file_put_contents($cheminSauvegarde, json_encode(['sceneId' => $sceneId]));
+}
+
+function chargerSauvegarde($nomSauvegarde) {
+  global $dossierSauvegardes;
+  $cheminSauvegarde = "$dossierSauvegardes/sauvegarde_$nomSauvegarde.json";
+  if (file_exists($cheminSauvegarde)) {
+    return json_decode(file_get_contents($cheminSauvegarde), true);
+  }
+  return null;
+}
+
+function supprimerSauvegarde($nomSauvegarde) {
+  global $dossierSauvegardes;
+  $cheminSauvegarde = "$dossierSauvegardes/sauvegarde_$nomSauvegarde.json";
+  if (file_exists($cheminSauvegarde)) {
+    unlink($cheminSauvegarde);
+  }
+}
+
+function listerSauvegardes() {
+  global $dossierSauvegardes;
+  $fichiers = glob("$dossierSauvegardes/sauvegarde_*.json");
+  return array_map(function($fichier) {
+    return str_replace(['sauvegardes/sauvegarde_', '.json'], '', $fichier);
+  }, $fichiers);
+}
+
+function jouerScene($sceneId, $couleurs, $nomSauvegarde) {
   global $aventure;
 
+  sauvegarderProgression($sceneId, $nomSauvegarde);
   clearScreen();
+  
   $scene = $aventure['scenes'][$sceneId];
   afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
+  pause();
 
   if (isset($scene['end']) && $scene['end'] === true) {
     afficherTexteAvecDelai("C FINI RENTRE CHEZ TOI.", $couleurs, 'rouge');
+    supprimerSauvegarde($nomSauvegarde);
     return;
   }
 
   if (isset($scene['next_scene'])) {
-    pause();
-    jouerScene($scene['next_scene'], $couleurs);
+    jouerScene($scene['next_scene'], $couleurs, $nomSauvegarde);
   } elseif (isset($scene['options'])) {
     $options = array_keys($scene['options']);
 
@@ -54,7 +92,7 @@ function jouerScene($sceneId, $couleurs) {
       afficherTexteAvecDelai(($i + 1) . ". " . ucfirst($options[$i]), $couleurs, 'vert');
     }
 
-    afficherTexteAvecDelai("Fais ton choix (1 à " . count($options) . ") ou tape 'exit' pour quitter TAPETTE : ", $couleurs, 'jaune');
+    afficherTexteAvecDelai("Fais ton choix (1 à " . count($options) . ") ou tape 'exit' pour quitter : ", $couleurs, 'jaune');
     $choixUtilisateur = trim(fgets(STDIN));
 
     if (strtolower($choixUtilisateur) === "exit") {
@@ -63,16 +101,86 @@ function jouerScene($sceneId, $couleurs) {
     }
 
     if (!is_numeric($choixUtilisateur) || $choixUtilisateur < 1 || $choixUtilisateur > count($options)) {
-      afficherTexteAvecDelai("T CON OU QUOI Choix invalide, essaie encore.", $couleurs, 'rouge');
-      jouerScene($sceneId, $couleurs);
+      afficherTexteAvecDelai("Choix invalide, essaie encore.", $couleurs, 'rouge');
+      jouerScene($sceneId, $couleurs, $nomSauvegarde);
     } else {
       $choixSuivant = $options[$choixUtilisateur - 1];
-      jouerScene($scene['options'][$choixSuivant], $couleurs);
+      jouerScene($scene['options'][$choixSuivant], $couleurs, $nomSauvegarde);
     }
   }
 }
 
-// Démarrer l'aventure
-jouerScene('start', $couleurs);
+function demarrerJeu($couleurs) {
+  $sauvegardes = listerSauvegardes();
+  
+  afficherTexteAvecDelai("Bienvenue dans l'aventure !", $couleurs, 'jaune');
+  if (count($sauvegardes) > 0) {
+    afficherTexteAvecDelai("\nDes sauvegardes sont disponibles. Que veux-tu faire ?", $couleurs, 'jaune');
+    echo "---------------------------------\n";
+    afficherTexteAvecDelai("1. Jouer une sauvegarde existante", $couleurs, 'vert');
+    afficherTexteAvecDelai("2. Supprimer une sauvegarde", $couleurs, 'rouge');
+    afficherTexteAvecDelai("3. Créer une nouvelle partie", $couleurs, 'bleu');
+    echo "---------------------------------\n";
+    echo "Choisis une option (1, 2 ou 3) : ";
+    $choix = trim(fgets(STDIN));
+
+    switch ($choix) {
+      case '1':
+        echo "\nSauvegardes disponibles : \n";
+        foreach ($sauvegardes as $index => $nomSauvegarde) {
+          afficherTexteAvecDelai(($index + 1) . ". " . ucfirst($nomSauvegarde), $couleurs, 'vert');
+        }
+        echo "\nChoisis une sauvegarde par numéro : ";
+        $choixSauvegarde = trim(fgets(STDIN));
+        $index = (int) $choixSauvegarde - 1;
+        if (isset($sauvegardes[$index])) {
+          $nomSauvegarde = $sauvegardes[$index];
+          $sauvegarde = chargerSauvegarde($nomSauvegarde);
+          if ($sauvegarde) {
+            jouerScene($sauvegarde['sceneId'], $couleurs, $nomSauvegarde);
+          } else {
+            afficherTexteAvecDelai("Erreur de chargement de la sauvegarde.", $couleurs, 'rouge');
+          }
+        } else {
+          afficherTexteAvecDelai("Choix invalide.", $couleurs, 'rouge');
+        }
+        break;
+
+      case '2':
+        echo "\nSauvegardes disponibles pour suppression :\n";
+        foreach ($sauvegardes as $index => $nomSauvegarde) {
+          afficherTexteAvecDelai(($index + 1) . ". " . ucfirst($nomSauvegarde), $couleurs, 'vert');
+        }
+        echo "\nChoisis une sauvegarde à supprimer par numéro : ";
+        $choixSauvegarde = trim(fgets(STDIN));
+        $index = (int) $choixSauvegarde - 1;
+        if (isset($sauvegardes[$index])) {
+          supprimerSauvegarde($sauvegardes[$index]);
+          afficherTexteAvecDelai("Sauvegarde supprimée.", $couleurs, 'rouge');
+          demarrerJeu($couleurs);
+        } else {
+          afficherTexteAvecDelai("Choix invalide.", $couleurs, 'rouge');
+          demarrerJeu($couleurs);
+        }
+        break;
+
+      case '3':
+        echo "Entrez un nom pour la nouvelle partie : ";
+        $nomSauvegarde = trim(fgets(STDIN));
+        jouerScene('start', $couleurs, $nomSauvegarde);
+        break;
+
+      default:
+        afficherTexteAvecDelai("Choix invalide.", $couleurs, 'rouge');
+        demarrerJeu($couleurs);
+    }
+  } else {
+    echo "Aucune sauvegarde trouvée. Entrez un nom pour la nouvelle partie : ";
+    $nomSauvegarde = trim(fgets(STDIN));
+    jouerScene('start', $couleurs, $nomSauvegarde);
+  }
+}
+
+demarrerJeu($couleurs);
 
 ?>
