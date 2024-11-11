@@ -1,54 +1,56 @@
 {
   "scenes": {
     "start": {
-      "text": "Vous avez vraiment pas de chance. A cause d'une grêve de train vous venez tout juste d'arriver chez Henri et vous avez complétement raté sa soirée. Sa femme viens de vous laisser dans le salon pour aller le reveiller. En effet cerise sur le gateau Henri et les invités sont encore en train de dormir. La chance dans votre malheur c'est que vous avez réussi à esquiver la tempète qui monte en puissance dehors. Soudain Nadia débarque dans le salon en criant et vous tire de vos pensées.\nVous vous exclamez:\n- Que se passe-t-il ? \n- C'est Henri ! Il à été assassiné ! crie Nadia \n-Quoi ?!\nTout les invités sont sorti de leur chambre et ont accouru quand ils ont entendu les cris. Tous recoivent la tragique nouvelle. Quelqu'un s'écrie:\n- Il faut appeller la police ! \nUn autre répond : \n- Les téléphones ne marchent plus \n- Il faut partir chercher de l'aide alors ! \n- Avec cette tempête ? Ce serais du suicide ! \nTout les invités sont maintenant attroupé dans le salon. Vous regardez autour de vous. Il y'a les demies-soeurs d'Henri Carole, Florence et Marie, ses parents Gunka et Henri, son demi-frêre Dominique et ses deux amis Vincent et Alban. Il ne faut pas oublier Nestor le majordome qui est de nature réservé et passe souvent inaperçut. La foule semble migrer vers le salon, vous décidez de suivre le mouvement. A peine arrivé dans les salon les plaintes et les accusations vole déja dans tout les sens. Vous décidez de vous dressez en plein milieux du salon pour rétablir le calme. ",
+      "text": "Vous n'avez vraiment pas de chance. À cause d'une grève de train, vous venez tout juste d'arriver chez Henri et vous avez complètement raté sa soirée. Sa femme vient de vous laisser dans le salon pour aller le réveiller. En effet, cerise sur le gâteau, Henri et les invités sont encore en train de dormir. La chance dans votre malheur, c'est que vous avez réussi à esquiver la tempête qui monte en puissance dehors. Soudain, Nadia débarque dans le salon en criant et vous tire de vos pensées.\nVous vous exclamez:\n- Que se passe-t-il ? \n- C'est Henri ! Il a été assassiné ! crie Nadia.\n- Quoi ?!\nTous les invités sortent de leur chambre et accourent en entendant les cris. Tous reçoivent la tragique nouvelle. Quelqu'un s'écrie:\n- Il faut appeler la police ! \nUn autre répond :\n- Les téléphones ne fonctionnent plus.\n- Il faut aller chercher de l'aide alors !\n- Avec cette tempête ? Ce serait du suicide !\nTous les invités sont maintenant attroupés dans le salon. Vous regardez autour de vous. Il y a les demi-sœurs d'Henri : Carole, Florence et Marie, ses parents Gunka et Henri, son demi-frère Dominique, et ses deux amis Vincent et Alban. Il ne faut pas oublier Nestor, le majordome, de nature réservée et souvent inaperçu. La foule semble migrer vers le salon, et vous décidez de suivre le mouvement. À peine arrivé dans le salon, les plaintes et les accusations fusent déjà. Vous décidez de vous dresser en plein milieu du salon pour rétablir le calme.",
       "options": {
-        "Que faisiez vous cette nuit ?": "Que faisiez vous cette nuit ?",
-        "Y'a t'il des caméras de surveillance ?": "Y'a t'il des caméras de surveillance ?"
+        "Que faisiez-vous cette nuit ?": "Que faisiez-vous cette nuit ?",
+        "Y a-t-il des caméras de surveillance ?": "Y a-t-il des caméras de surveillance ?"
       }
     },
-    "Que faisiez vous cette nuit ?": {
-      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer ! \nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Que faisait chacun de vous cette nuit ? A quelle heure vous-êtes vous couché et avez-vous vu quelque chose de suspect ? \n-On dormait, répond d'abord Henri (père) en se désignant lui et sa femme. On à dû se coucher vers 23h mais on à rien vu ou entendu de suspect.\n- Pareil, répondent Alban et Dominique.\nLes soeurs répondent ensuite: -Nous somme resté dans le salon très longtemps à papoter on à du se coucher à 3h du matin. Carole nous à quitté un peu avant par contre. \nLes regards se tournent vers Carole:\n-Je me sentais fatigué et j'avais besoin d'une douche. Je me suis couché à peu près en même temps que les filles.\n-J'ai été sur mon téléphone longtemps, reprend Vincent, et je suis allé prendre à boire dans la cuisine vers 3h30 et j'ai remarqué que la porte du garage était ouverte. Je n'y ai pas fait très attention cependant et je suis retourné me coucher.  \nUn silence suit les propos de Dominique. Vous regardez au loin a travers la fenêtre pour refléchir et dans votre champs de vision périphérique vous apercevez Nestor debout derrière la canapé. Droit comme un i comme à son habitude.\n- Et vous Nestor ? demandez-vous\n- Je réparait la voiture de monsieur, dit Nestor.\n-Vous répariez la voiture d'Henri ? \n-Oui la voiture de monsieur a été victime d'une panne récemment et monsieur aurait du en avoir besoin aujourd'hui pour ramener certain invités chez eux où à la gare. ",
+    "Que faisiez-vous cette nuit ?": {
+      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer ! \nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Que faisait chacun de vous cette nuit ? À quelle heure vous êtes-vous couché et avez-vous vu quelque chose de suspect ?\n-On dormait, répond d'abord Henri (père) en se désignant lui et sa femme. On a dû se coucher vers 23 h mais on n'a rien vu ou entendu de suspect.\n- Pareil, répondent Alban et Dominique.\nLes sœurs répondent ensuite :\n-Nous sommes restées dans le salon très longtemps à papoter, on a dû se coucher à 3 h du matin. Carole nous a quittées un peu avant par contre.\nLes regards se tournent vers Carole :\n-Je me sentais fatiguée et j'avais besoin d'une douche. Je me suis couchée à peu près en même temps que les filles.\n-J'ai été sur mon téléphone longtemps, reprend Vincent, et je suis allé prendre à boire dans la cuisine vers 3 h 30 et j'ai remarqué que la porte du garage était ouverte. Je n'y ai pas fait très attention cependant et je suis retourné me coucher.\nUn silence suit les propos de Dominique. Vous regardez au loin à travers la fenêtre pour réfléchir et dans votre champ de vision périphérique, vous apercevez Nestor debout derrière le canapé, droit comme un I comme à son habitude.\n- Et vous, Nestor ? demandez-vous.\n- Je réparais la voiture de monsieur, dit Nestor.\n-Vous répariez la voiture d'Henri ?\n-Oui, la voiture de monsieur a été victime d'une panne récemment et monsieur aurait dû en avoir besoin aujourd'hui pour ramener certains invités chez eux ou à la gare.",
       "options": {
-        "A quelle heure êtes-vous parti vous coucher ?": "A quelle heure êtes-vous parti vous coucher ?",
-        "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ? ": "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ? "
+        "À quelle heure êtes-vous parti vous coucher ?": "À quelle heure êtes-vous parti vous coucher ?",
+        "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ? ": "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ?"
       }
     },
-    "Y'a t'il des caméras de surveillance ?": {
-      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer ! \nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Y'a t'il des caméras de sécurité dans le domicile qui peuvent nous aider à comprendre ce qu'il c'est passé ? \nNadia aquiesce:\n-Dans le domicile il n'y a que la caméra à l'interieur du garage \n-Pourrais-je voir ce qu'a enregistré la caméra dans  le garage ? \nNadia aquiesce et sort son téléphone. \nEn effet la caméra à capté du mouvement à 22h. La qualité de l'image n'est pas très bonne mais on y voit tout de même Alban rentrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clef à molette avant de partir.\nAlban s'exclame:\n-Je me souvient pas du tout de ça ! Je devais être complètement bourré !",
-      "options":{
-        "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri",
-        "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
-      }
-    },
-    "A quelle heure êtes-vous parti vous coucher ?":{
-      "text":"-Je ne me suis pas couché monsieur. J'ai travaillé sur le vehicule toute la nuit car il m'était impossible de trouver ma clé à molette.",
+    "Y a-t-il des caméras de surveillance ?": {
+      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer !\nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Y a-t-il des caméras de sécurité dans le domicile qui peuvent nous aider à comprendre ce qui s'est passé ?\nNadia acquiesce:\n-Dans le domicile, il n'y a que la caméra à l'intérieur du garage.\n-Puis-je voir ce qu'a enregistré la caméra dans le garage ?\nNadia acquiesce et sort son téléphone.\nEn effet, la caméra a capté du mouvement à 22 h. La qualité de l'image n'est pas très bonne, mais on y voit tout de même Alban entrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clé à molette avant de partir.\nAlban s'exclame:\n-Je ne me souviens pas du tout de ça ! J'ai dû être complètement bourré !",
       "options": {
-        "Partir trouver des indices dans la chambre d'Henri ": "Partir trouver des indices dans la chambre d'Henri ",
-        "A quelle heure avez-vous commencé les réparation ? ": "A quelle heure avez-vous commencé les réparation ? ",
-        "Allez dans le garage ":"Allez dans le garage"
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri",
+        "Alban a tué Henri avec la clé à molette": "Alban a tué Henri avec la clé à molette"
       }
     },
-    "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ?":{
-      "text":"-C'est mon travail monsieur d'avoir des connaissances dans tout ce qui peut être utile. Je ne suis certes pas un professionnel mais je dois être en capacité d'apporter de l'aide quand cela est nécessaire.",
+    "À quelle heure êtes-vous parti vous coucher ?": {
+      "text": "-Je ne me suis pas couché, monsieur. J'ai travaillé sur le véhicule toute la nuit, car il m'était impossible de trouver ma clé à molette.",
       "options": {
-        "A quelle heure êtes-vous parti vous coucher ?": "A quelle heure êtes-vous parti vous coucher ?",
-        "A quelle heure avez-vous commencé les réparation ? ": "A quelle heure avez-vous commencé les réparation ? ",
-        "Allez dans le garage ":"Allez dans le garage"
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri",
+        "À quelle heure avez-vous commencé les réparations ?": "À quelle heure avez-vous commencé les réparations ?",
+        "Aller dans le garage": "Aller dans le garage"
       }
     },
-    "A quelle heure avez-vous commencé les réparation ? ":{
-      "text":"- 2h du matin monsieur",
-      "options":{
-        "Allez dans le garage ":"Allez dans le garage ",
-        "Partir trouver des indices dans la chambre d'Henri ":"Partir trouver des indices dans la chambre d'Henri "
+    "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ?": {
+      "text": "-C'est mon travail, monsieur, d'avoir des connaissances dans tout ce qui peut être utile. Je ne suis certes pas un professionnel, mais je dois être en capacité d'apporter de l'aide quand cela est nécessaire.",
+      "options": {
+        "À quelle heure êtes-vous parti vous coucher ?": "À quelle heure êtes-vous parti vous coucher ?",
+        "À quelle heure avez-vous commencé les réparations ?": "À quelle heure avez-vous commencé les réparations ?",
+        "Aller dans le garage": "Aller dans le garage"
       }
-    },"Allez dans le garage":{
-      "text":"Vous traversez la cuisine avec Nestor pour aller dans le garage. A l'interieur une Rolls Roys trône sur un sol pavé. Elle est surveillé par une caméra dans le coin du plafond. Des outils sont rangé et aligné sur le mur du fond. Visiblement celui qui les a mis là a fait très attention à l'organisation. Tellement d'ailleur que vous remarquez tout de suite que la clef à molette est manquante.",
-      "options":{
-        "Depuis quand n'y a t'il plus de clef à molette ?":"Depuis quand n'y a t'il plus de clef à molette ?"
+    },
+    "À quelle heure avez-vous commencé les réparations ?": {
+      "text": "- 2 h du matin, monsieur.",
+      "options": {
+        "Aller dans le garage": "Aller dans le garage",
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri"
       }
-    },"Depuis quand n'y a t'il plus de clef à molette ?":{
+    },
+    "Aller dans le garage": {
+      "text": "Vous traversez la cuisine avec Nestor pour aller dans le garage. À l'intérieur, une Rolls-Royce trône sur un sol pavé. Elle est surveillée par une caméra dans le coin du plafond. Des outils sont rangés et alignés sur le mur du fond. Visiblement, celui qui les a mis là a fait très attention à l'organisation. Tellement d'ailleurs que vous remarquez tout de suite que la clé à molette est manquante.",
+      "options": {
+        "Depuis quand n'y a-t-il plus de clé à molette ?": "Depuis quand n'y a-t-il plus de clé à molette ?"
+      }
+    }
+    ,"Depuis quand n'y a t'il plus de clef à molette ?":{
       "text":"-Je m'en suis rendu compte hier en fin de journée monsieur, répondit Nestor.",
       "options":{
         "Demander aux invités si ils n'ont pas vu quelqu'un aller dans le garage":"Demander aux invités si ils n'ont pas vu quelqu'un aller dans le garage",
