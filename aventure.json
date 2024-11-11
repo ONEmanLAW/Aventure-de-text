@@ -74,7 +74,7 @@
       }
     },
     "Voir la caméra de sécurité":{
-      "text":"Vous vous rendez dans le salon.\n-Pourrais-je voir ce qu'a enregistré la caméra dans  le garage ? \nNadia aquiesce et sort son téléphone. \nEn effet la caméra à capté du mouvement à 22h. La qualité de l'image n'est pas très bonne mais on y voit tout de même Alban rentrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clef à molette avant de partir.\nAlban s'exclame:\n-Je me souvient pas du tout de ça ! Je devais être complètement bourré !",
+      "text":"Vous vous rendez dans le salon.\n-Pourrais-je voir ce qu'a enregistré la caméra dans  le garage ? \nNadia aquiesce et sort son téléphone. \nEn effet la caméra à capté du mouvement à 22h. La qualité de l'image n'est pas très bonne mais on y voit tout de même Alban entrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clef à molette avant de partir.\nAlban s'exclame:\n-Je me souvient pas du tout de ça ! Je devais être complètement bourré !",
       "options":{
         "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri",
         "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
