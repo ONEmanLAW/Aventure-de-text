@@ -27,11 +27,16 @@
       "text": "Tu arrives au pont. Que fais-tu ? Traverser le pont ou rebrousser chemin ?",
       "options": {
         "cross": "cross_bridge",
-        "return": "start"
+        "return": "start",
+        "cross_safely": "victory"
       }
     },
     "cross_bridge": {
       "text": "Tu tentes de traverser le pont, mais il craque sous ton poids et s'effondre. Tu tombes dans la rivière et te noies... Tu es mort.",
+      "end": true
+    },
+    "victory": {
+      "text": "Félicitations ! Tu as traversé le pont en toute sécurité et trouvé une sortie vers la liberté. Tu as gagné !",
       "end": true
     }
   }

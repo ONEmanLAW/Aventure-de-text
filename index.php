@@ -18,6 +18,8 @@ if (!file_exists($dossierSauvegardes)) {
   mkdir($dossierSauvegardes);
 }
 
+$scenesParcourues = [];
+
 function afficherTexteAvecDelai($texte, $couleurs, $couleur = 'reset') {
   $texteColorise = $couleurs[$couleur] . $texte . $couleurs['reset'];
   foreach (str_split($texteColorise) as $caractere) {
@@ -67,18 +69,60 @@ function listerSauvegardes() {
   }, $fichiers);
 }
 
+
+function genererMarkdown($scenesParcourues, $nomSauvegarde, $resultat) {
+  global $dossierSauvegardes;
+  $cheminMarkdown = "$dossierSauvegardes/$nomSauvegarde.md";
+  $markdown = "# Aventure Interactif - $nomSauvegarde\n\n";
+
+
+  if ($resultat === 'victoire') {
+    $markdown .= "🎉 **Félicitations, vous avez gagné !** 🏆\n\n";
+    $markdown .= "Voici votre aventure en détail, avec des choix intéressants.\n";
+  } else {
+    $markdown .= "😞 **Vous avez perdu !** 💀\n\n";
+    $markdown .= "Vous avez fait de votre mieux, mais voici comment l'histoire s'est terminée.\n";
+  }
+
+
+  foreach ($scenesParcourues as $scene) {
+    $markdown .= "## " . ucfirst(str_replace('_', ' ', $scene['id'])) . "\n";
+    $markdown .= $scene['text'] . "\n\n";
+  }
+
+
+  file_put_contents($cheminMarkdown, $markdown);
+
+  echo "\nLe fichier Markdown a été généré et est maintenant ouvert dans votre éditeur par défaut.\n";
+  system("start $cheminMarkdown");
+}
+
+
 function jouerScene($sceneId, $couleurs, $nomSauvegarde) {
-  global $aventure;
+  global $aventure, $scenesParcourues;
 
   sauvegarderProgression($sceneId, $nomSauvegarde);
   clearScreen();
   
   $scene = $aventure['scenes'][$sceneId];
   afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
-  pause();
+  pause(); 
+
+  $scenesParcourues[] = ['id' => $sceneId, 'text' => $scene['text'], 'image' => isset($scene['image']) ? $scene['image'] : null];
 
   if (isset($scene['end']) && $scene['end'] === true) {
-    afficherTexteAvecDelai("C FINI RENTRE CHEZ TOI.", $couleurs, 'rouge');
+    if ($sceneId === 'victory') {
+      afficherTexteAvecDelai("FÉLICITATIONS ! VOUS AVEZ GAGNÉ !", $couleurs, 'vert');
+      pause();
+      $resultat = 'victoire';
+    } else {
+      afficherTexteAvecDelai("C FINI RENTRE CHEZ TOI.", $couleurs, 'rouge');
+      $resultat = 'defaite';
+    }
+
+    afficherTexteAvecDelai("Pour visualiser les choix que vous avez faits pendant l'histoire, consultez le fichier Markdown généré : '$nomSauvegarde.md'.", $couleurs, 'jaune');
+    
+    genererMarkdown($scenesParcourues, $nomSauvegarde, $resultat);
     supprimerSauvegarde($nomSauvegarde);
     return;
   }
@@ -120,24 +164,22 @@ function demarrerJeu($couleurs) {
     afficherTexteAvecDelai("1. Jouer une sauvegarde existante", $couleurs, 'vert');
     afficherTexteAvecDelai("2. Supprimer une sauvegarde", $couleurs, 'rouge');
     afficherTexteAvecDelai("3. Créer une nouvelle partie", $couleurs, 'bleu');
-    echo "---------------------------------\n";
-    echo "Choisis une option (1, 2 ou 3) : ";
     $choix = trim(fgets(STDIN));
-
+    
     switch ($choix) {
       case '1':
-        echo "\nSauvegardes disponibles : \n";
+        echo "\nSauvegardes disponibles :\n";
         foreach ($sauvegardes as $index => $nomSauvegarde) {
           afficherTexteAvecDelai(($index + 1) . ". " . ucfirst($nomSauvegarde), $couleurs, 'vert');
         }
-        echo "\nChoisis une sauvegarde par numéro : ";
+        echo "\nChoisis une sauvegarde à charger : ";
         $choixSauvegarde = trim(fgets(STDIN));
         $index = (int) $choixSauvegarde - 1;
         if (isset($sauvegardes[$index])) {
-          $nomSauvegarde = $sauvegardes[$index];
-          $sauvegarde = chargerSauvegarde($nomSauvegarde);
+          $sauvegarde = chargerSauvegarde($sauvegardes[$index]);
           if ($sauvegarde) {
-            jouerScene($sauvegarde['sceneId'], $couleurs, $nomSauvegarde);
+            afficherTexteAvecDelai("Sauvegarde chargée. Reprise du jeu...", $couleurs, 'vert');
+            jouerScene($sauvegarde['sceneId'], $couleurs, $sauvegardes[$index]);
           } else {
             afficherTexteAvecDelai("Erreur de chargement de la sauvegarde.", $couleurs, 'rouge');
           }
