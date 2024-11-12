@@ -15,7 +15,7 @@ Bienvenue dans **Aventure Textuelle en PHP** — un jeu d'aventure interactif jo
 
 2. Accède au dossier du projet :
    ```bash
-   cd aventure-textuelle
+   cd Aventure-de-text
     ```
 3. Lance le jeu :
    ```bash
