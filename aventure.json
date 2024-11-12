@@ -1,38 +1,160 @@
 {
   "scenes": {
     "start": {
-      "text": "Tu te réveilles dans une forêt sombre. Il fait froid et tu ne sais pas comment tu es arrivé là. Tu vois deux chemins devant toi.",
-      "next_scene": "left_or_right"
-    },
-    "left_or_right": {
-      "text": "Choisis un chemin. Le chemin de gauche semble plus sombre, tandis que celui de droite paraît plus dangereux.",
+      "text": "Vous n'avez vraiment pas de chance. À cause d'une grève de train, vous venez tout juste d'arriver chez Henri et vous avez complètement raté sa soirée. Sa femme vient de vous laisser dans le salon pour aller le réveiller. En effet, cerise sur le gâteau, Henri et les invités sont encore en train de dormir. La chance dans votre malheur, c'est que vous avez réussi à esquiver la tempête qui monte en puissance dehors. Soudain, Nadia débarque dans le salon en criant et vous tire de vos pensées.\nVous vous exclamez:\n- Que se passe-t-il ? \n- C'est Henri ! Il a été assassiné ! crie Nadia.\n- Quoi ?!\nTous les invités sortent de leur chambre et accourent en entendant les cris. Tous reçoivent la tragique nouvelle. Quelqu'un s'écrie:\n- Il faut appeler la police ! \nUn autre répond :\n- Les téléphones ne fonctionnent plus.\n- Il faut aller chercher de l'aide alors !\n- Avec cette tempête ? Ce serait du suicide !\nTous les invités sont maintenant attroupés dans le salon. Vous regardez autour de vous. Il y a les demi-sœurs d'Henri : Carole, Florence et Marie, ses parents Gunka et Henri, son demi-frère Dominique, et ses deux amis Vincent et Alban. Il ne faut pas oublier Nestor, le majordome, de nature réservée et souvent inaperçu. La foule semble migrer vers le salon, et vous décidez de suivre le mouvement. À peine arrivé dans le salon, les plaintes et les accusations fusent déjà. Vous décidez de vous dresser en plein milieu du salon pour rétablir le calme.",
       "options": {
-        "left": "left_path",
-        "right": "right_path"
+        "Que faisiez-vous cette nuit ?": "Que faisiez-vous cette nuit ?",
+        "Y a-t-il des caméras de surveillance ?": "Y a-t-il des caméras de surveillance ?"
       }
     },
-    "left_path": {
-      "text": "Tu choisis le chemin de gauche et avances dans l'obscurité. Tu entends des bruits étranges autour de toi.",
-      "next_scene": "danger_in_the_dark"
+    "Que faisiez-vous cette nuit ?": {
+      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer ! \nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Que faisait chacun de vous cette nuit ? À quelle heure vous êtes-vous couché et avez-vous vu quelque chose de suspect ?\n-On dormait, répond d'abord Henri (père) en se désignant lui et sa femme. On a dû se coucher vers 23 h mais on n'a rien vu ou entendu de suspect.\n- Pareil, répondent Alban et Dominique.\nLes sœurs répondent ensuite :\n-Nous sommes restées dans le salon très longtemps à papoter, on a dû se coucher à 3 h du matin. Carole nous a quittées un peu avant par contre.\nLes regards se tournent vers Carole :\n-Je me sentais fatiguée et j'avais besoin d'une douche. Je me suis couchée à peu près en même temps que les filles.\n-J'ai été sur mon téléphone longtemps, reprend Vincent, et je suis allé prendre à boire dans la cuisine vers 3 h 30 et j'ai remarqué que la porte du garage était ouverte. Je n'y ai pas fait très attention cependant et je suis retourné me coucher.\nUn silence suit les propos de Dominique. Vous regardez au loin à travers la fenêtre pour réfléchir et dans votre champ de vision périphérique, vous apercevez Nestor debout derrière le canapé, droit comme un I comme à son habitude.\n- Et vous, Nestor ? demandez-vous.\n- Je réparais la voiture de monsieur, dit Nestor.\n-Vous répariez la voiture d'Henri ?\n-Oui, la voiture de monsieur a été victime d'une panne récemment et monsieur aurait dû en avoir besoin aujourd'hui pour ramener certains invités chez eux ou à la gare.",
+      "options": {
+        "À quelle heure êtes-vous parti vous coucher ?": "À quelle heure êtes-vous parti vous coucher ?",
+        "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ? ": "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ?"
+      }
     },
-    "right_path": {
-      "text": "Tu choisis le chemin de droite. Après quelques mètres, tu vois un vieux pont suspendu. Il semble fragile.",
-      "next_scene": "bridge_decision"
+    "Y a-t-il des caméras de surveillance ?": {
+      "text": "- Du calme ! vous écriez-vous, ce n'est pas en s'accusant sans fondement qu'on va avancer !\nUn silence s'abat sur la pièce.\nVous reprenez:\n-Bien, commençons par la base. Y a-t-il des caméras de sécurité dans le domicile qui peuvent nous aider à comprendre ce qui s'est passé ?\nNadia acquiesce:\n-Dans le domicile, il n'y a que la caméra à l'intérieur du garage.\n-Puis-je voir ce qu'a enregistré la caméra dans le garage ?\nNadia acquiesce et sort son téléphone.\nEn effet, la caméra a capté du mouvement à 22 h. La qualité de l'image n'est pas très bonne, mais on y voit tout de même Alban entrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clé à molette avant de partir.\nAlban s'exclame:\n-Je ne me souviens pas du tout de ça ! J'ai dû être complètement bourré !",
+      "options": {
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri",
+        "Alban a tué Henri avec la clé à molette": "Alban a tué Henri avec la clé à molette"
+      }
     },
-    "danger_in_the_dark": {
-      "text": "Tu avances prudemment, mais une bête sauvage surgit des buissons et te dévore... Tu es mort.",
+    "À quelle heure êtes-vous parti vous coucher ?": {
+      "text": "-Je ne me suis pas couché, monsieur. J'ai travaillé sur le véhicule toute la nuit, car il m'était impossible de trouver ma clé à molette.",
+      "options": {
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri",
+        "À quelle heure avez-vous commencé les réparations ?": "À quelle heure avez-vous commencé les réparations ?",
+        "Aller dans le garage": "Aller dans le garage"
+      }
+    },
+    "Pourquoi répariez-vous la voiture d'Henri alors que vous êtes un majordome ?": {
+      "text": "-C'est mon travail, monsieur, d'avoir des connaissances dans tout ce qui peut être utile. Je ne suis certes pas un professionnel, mais je dois être en capacité d'apporter de l'aide quand cela est nécessaire.",
+      "options": {
+        "À quelle heure êtes-vous parti vous coucher ?": "À quelle heure êtes-vous parti vous coucher ?",
+        "À quelle heure avez-vous commencé les réparations ?": "À quelle heure avez-vous commencé les réparations ?",
+        "Aller dans le garage": "Aller dans le garage"
+      }
+    },
+    "À quelle heure avez-vous commencé les réparations ?": {
+      "text": "- 2 h du matin, monsieur.",
+      "options": {
+        "Aller dans le garage": "Aller dans le garage",
+        "Partir trouver des indices dans la chambre d'Henri": "Partir trouver des indices dans la chambre d'Henri"
+      }
+    },
+    "Aller dans le garage": {
+      "text": "Vous traversez la cuisine avec Nestor pour aller dans le garage. À l'intérieur, une Rolls-Royce trône sur un sol pavé. Elle est surveillée par une caméra dans le coin du plafond. Des outils sont rangés et alignés sur le mur du fond. Visiblement, celui qui les a mis là a fait très attention à l'organisation. Tellement d'ailleurs que vous remarquez tout de suite que la clé à molette est manquante.",
+      "options": {
+        "Depuis quand n'y a-t-il plus de clé à molette ?": "Depuis quand n'y a-t-il plus de clé à molette ?"
+      }
+    }
+    ,"Depuis quand n'y a-t-il plus de clé à molette ?":{
+      "text":"-Je m'en suis rendu compte hier en fin de journée monsieur, répondit Nestor.",
+      "options":{
+        "Demander aux invités si ils n'ont pas vu quelqu'un aller dans le garage":"Demander aux invités si ils n'ont pas vu quelqu'un aller dans le garage",
+        "Demander à Nestor si il n'a pas vu quelqu'un aller dans le garage ":"Demander à Nestor si il n'a pas vu quelqu'un aller dans le garage ",
+        "Voir la caméra de sécurité":"Voir la caméra de sécurité"  
+      }
+    },"Demander aux invités si ils n'ont pas vu quelqu'un aller dans le garage":{
+      "text":"Vous voilà de retour dans le salon. Face à vous les invitées réflechissent si ils n'ont pas vu quelqu'un aller dans le garage. \nCarole prend la parole en première :\n-Je crois que j'ai vu Alban y aller en milieux de soirée.\nLes regards se tournent vers Alban.\n-Je ne suis jamais allé dans le garage ! s'exclame celui-ci.\n-Je peut te l'assurer ! J'était parti me servir dans le frigo et je t'ai vu y entrer !",
+      "options":{
+        "Demander à Nestor si il n'a pas vu quelqu'un aller dans le garage ":"Demander à Nestor si il n'a pas vu quelqu'un aller dans le garage ",
+        "Voir la caméra de sécurité":"Voir la caméra de sécurité",
+        "Carole ment":"Carole ment"
+      }
+    },
+    "Demander à Nestor si il n'a pas vu quelqu'un aller dans le garage":{
+      "text":"-Désolé je n'ai vu personne monsieur, répondit Nestor.",
+      "options":{
+        "Chercher des indices dans la chambre de Carole":"Chercher des indices dans la chambre de Carole",
+        "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri",
+        "Chercher des indices dans la chambre d'Alban":"Chercher des indices dans la chambre d'Alban"
+      }
+    },
+    "Voir la caméra de sécurité":{
+      "text":"Vous vous rendez dans le salon.\n-Pourrais-je voir ce qu'a enregistré la caméra dans  le garage ? \nNadia aquiesce et sort son téléphone. \nEn effet la caméra à capté du mouvement à 22h. La qualité de l'image n'est pas très bonne mais on y voit tout de même Alban entrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clef à molette avant de partir.\nAlban s'exclame:\n-Je me souvient pas du tout de ça ! Je devais être complètement bourré !",
+      "options":{
+        "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri",
+        "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
+      }
+    },
+    "Partir trouver des indices dans la chambre d'Henri":{
+      "text":"Vous vous rendez dans la chambre d'Henri. En ouvrant vous découvrez le corps d'Henri recouvert d'un drap blanc. En vous approchant vous appercevez un tache de sang au niveau de sa tête. Là où l'attaquant à frappé sans aucun doute. Vous vous rendez d'abords au bureau d'Henri au fond de la chambre sous une grande fenêtre. En vous approchant vous réalisez qu'il est complètement sans-dessus-dessous. La plupart des tiroirs sont ouvert, tout les pots à crayon sont renversé et une montagne de papiers s'amasse sur le bureau. D'ailleur il y'a presque plus de papier éparpillé sur le sol que sur le bureau. Visiblement quelqun l'a fouillé la nuit du meurtre. Mais qui et pourquoi ? La fenêtre de la chambre d'Henri est absolument gigantesque. Il ne manque plus que des vitraux pour se croire dans une cathédrale ! Malheureusement on ne voit pas grand chose à travers à cause de la tempête. Cependant en regardant en bas vous appercevez quelque chose dans la boue... Ce sont des traces de pas.  Après avoir refait un tour pour être sûr de n'avoir rien raté vous sortez de la chambre et regagnez le salon. Vous découvrez alors, a votre grande surprise, que tout le monde est parti, tout le monde sauf Nestor, le majordome. Celui-ci est ranquillement entrain de jouer au cartes sur la table du salon.\n-Où sont parti les invités ? demandez-vous. \n-La plupart ont regagné leur chambre monsieur.\nVous soupirez de fatigue. Nestor doit comprendre votre détresse puisque celui-ci demande : \n-Puis-je proposer à monsieur une partie de blackjack pour vous aidez à penser à autre chose ?  ",
+      "options":{
+        "Oui":"Oui",
+        "Non":"Non",
+        "Peux-tu me rappeler les rêgles s'il te plait ?":"Peux-tu me rappeler les rêgles s'il te plait ?"
+      }
+    },"Peux-tu me rappeler les rêgles s'il te plait ?":{
+      "text":"Le blackjack est un jeu de cartes fort apprécié, où l’objectif, pour chaque joueur, est de constituer une main dont la valeur approche le nombre 21, sans jamais le dépasser, et ce, en surclassant celle du croupier. Les cartes numérotées de 2 à 10 valent leur chiffre respectif, tandis que les figures – valet, dame et roi – se voient attribuer une valeur de 10. Quant à l’as, il revêt la particularité de pouvoir valoir 1 ou 11, selon ce qui favorise le mieux le joueur. Le jeu débute avec la distribution de deux cartes à chaque joueur ainsi qu’au croupier, dont une carte reste dissimulée. Ensuite, chaque participant peut choisir de « tirer » une carte supplémentaire pour se rapprocher de 21 ou de « refuser » s'il juge sa main suffisamment forte. Seriez-vous intéressé de faire une partie ?",
+      "options":{
+        "Oui":"Oui",
+        "Non":"Non"
+      }
+    },
+    "Carole ment":{
+      "text":"-T'es allé chercher quoi dans le frigo Carole ? \n-Un autre pack de bière pourquoi ? \n-Est-ce que c'est possible que tu est bu un peu trop et que tu ne souvienne pas trop de ce qu'il c'est passé ? \n-Hein? Mais pas du tout...\n-Si Carole avoue que tu n'étais pas totalement lucide hier soir.\nTout les invités aquiesce.",
+      "options":{
+        "Chercher des indices dans la chambre de Carole":"Chercher des indices dans la chambre de Carole",
+        "Chercher des indices dans la chambre d'Alban":"Chercher des indices dans la chambre d'Alban"
+      }
+    },"Chercher des indices dans la chambre de Carole":{
+      "text":"Vous vous rendez dans la chambre de Carole malgré ses plaintes. En ouvrant la porte vous remarquer tout de suite un eclat métallique sous le lit. En vous baissant vous réalisez que c'est en effet la clé à molette. ",
+      "options":{
+        "Chercher plus d'indices dans la chambre d'Henri":"Chercher plus d'indices dans la chambre d'Henri",
+        "Carole à tué Henri avec la clé à molette":"Carole à tué Henri avec la clé à molette"
+      }
+    },"Carole à tué Henri avec la clé à molette":{
+      "text":"Vous et les invités avez enfermé Carole dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Carole n'étais pas la tueuse. Et que le vrai tueur est introuvable. \n Vous avez echoué.",
+      "end":true
+    },"Chercher des indices dans la chambre d'Alban":{
+      "text":"Vous vous rendez dans la chambre d'Alban malgré ses plaintes. Vous avez beau fouiller la chambre de fond en comble vous ne trouvez rien d'incriminant.",
+      "options":{
+        "Chercher plus d'indices dans la chambre d'Henri":"Chercher plus d'indices dans la chambre d'Henri",
+        "Chercher des indices dans la chambre de Carole":"Chercher des indices dans la chambre de Carole"
+      }
+    },"Chercher plus d'indices dans la chambre d'Henri":{
+      "text":"Vous vous rendez dans la chambre d'Henri. En ouvrant vous découvrez le corps d'Henri recouvert d'un drap blanc. En vous approchant vous appercevez un tache de sang au niveau de sa tête. Là où l'attaquant à frappé sans aucun doute. Soudain Marie arrive en courant :\n-Regarde ce que j'ai trouvé ! dit elle en lançant une vidéo sur son téléphone.\nSur la vidéo on apperçoit Alban visiblement bourré parler à la caméra. \n-Tu sais ce que je vais faire Marie ? \nLa voix de Marie hors champs répond.\n- Non quoi ? \n- Je vais aller voir dans le garage si y'a pas quelque chose qui va m'aider à réparer la fuite dans ma chambre.\n-Tu veux faire ça maintenant ? \n-Mais ouais ça va être vite fait et là j'ai la motiv'. En plus faut que je me chache d'Henri.\n- Pourquoi ça ? dit Marie en rigolant.\n- Pcq il va encore me parler du curry qu'on doit se faire. Je te jure si il me parle encore de curry je vais commettre un meurte. ",
+      "options":{
+        "Montrer la video à Alban":"Montrer la video à Alban",
+        "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
+      }
+    },"Alban à tué Henri avec la clé à molette":{
+      "text":"Vous et les invités avez enfermé Alban dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Alban n'étais pas le tueur. Et que le vrai tueur est introuvable. \nVous avez echoué.",
+      "end":true
+    },"Montrer la video à Alban":{
+      "text":"En voyant la video Alban s'exclame:\n-Mais oui je me souvient de ça ! C'est bon je me souvient ! J'ai pris la clé à mollette pour resserrer le tuyaux qui fuiait sous mon robinet... Oh !... Oh mais je me souvient... je n'ai pas réussis à trouver ma chambre ! J'ai laissé la clé à mollette dans une chambre qui n'étais pas la mienne !",
+      "options":{
+        "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri"
+      }
+    },"Oui":{
+      "text":"blackjack",
+      "options":{
+        "Tirer":"Tirer",
+        "Refuser":"Refuser"
+      }
+    },"Non":{
+      "text":"Vous refusez poliment et vous dirigez vers votre chambre. Mais à peine avez-vous passé le seuil de votre porte que quelqu'un vous agrippe par derrière et vous dit : \n -Pardon ce n'étais pas censé se passer comme ça mais tu as trop fouiné.\n\n VOUS ÊTES MORT",
       "end": true
     },
-    "bridge_decision": {
-      "text": "Tu arrives au pont. Que fais-tu ? Traverser le pont ou rebrousser chemin ?",
-      "options": {
-        "cross": "cross_bridge",
-        "return": "start",
-        "cross_safely": "victory"
+    "Tirer":{
+      "text":"tirer",
+      "options":{
+        "Tirer":"Tirer",
+        "Refuser":"Refuser"
       }
     },
-    "cross_bridge": {
-      "text": "Tu tentes de traverser le pont, mais il craque sous ton poids et s'effondre. Tu tombes dans la rivière et te noies... Tu es mort.",
+    "Refuser":{
+      "text":"Refuser"
+    },
+    "gagne":{
+      "text":"-Bien joué monsieur, vous m'avez battu. Vous savez je ne suis pas censé vous dire ça mais monsieur Larget m'a confié quelque chose de très précieux et il à dit que quelqu'un risquait de le voler. \n -Vous a-t-il dit qui ? \n -Non monsieur, mais je soupçonne que c'est la cause du meurte. Maintenant, si vous voulez bien m'excuser, je dois aller nettoyer des traces de boues dasn le couloir. \n -Des traces de boue ? dites-vous en vous remémorant les traces de pas que vous aviez vu au pied de la fenêtre d'Henri \n -Oui dans le couloir. \n Sans perdre un instant vous foncez dans le couloir. Vous suivez les traces jusqu'a la porte de la chambre de Vincent. Vous ouvrez la porte et tombez nez à nez avec lui. Vous lui expliquer ce que vous avez trouvez et Vincent s'effondre. Il explique que ce n'éatis pas de sa faute qu'il cherchait juste à faire peur à Henri pour récupérer une clé USB sur laquelle est stocké une structure de données parfaite. Qui révolutionnerais le monde de l'informatique dit-il. Cependant Henri ne voulait pas la lui donner de peur de ce que pouvait devenir sa création si elle tombait entre de mauvaise mains. \n\n BRAVO VOUS AVEZ DÉMASQUÉ LE TUEUR !",
+      "end": true
+    },
+    "perd":{
+      "text":"-Dommage monsieur, vous avez perdu. \n Vous sortez du salon et regagnez votre chambre les indices tournent dans votre tête mais vous n'arrivez pas à en faire sens. A l'éxterieur la tempète se calme et vous entendez des sirènes de polices au loin. Quelqu'un à du les appeler enfin. Malheureusement il ne trouverons jamais le tueur et celui-ci restera en liberté. \n\n VOUS AVEZ ÉCHOUÉ ",
       "end": true
     },
     "victory": {

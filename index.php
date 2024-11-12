@@ -1,6 +1,7 @@
 <?php
 
 // Pour lancer le script (le jeu) faire php index.php dans le terminal.
+include "blackjack.php";
 
 $couleurs = [
   'rouge' => "\033[31m",
@@ -21,6 +22,7 @@ if (!file_exists($dossierSauvegardes)) {
 $scenesParcourues = [];
 
 function afficherTexteAvecDelai($texte, $couleurs, $couleur = 'reset') {
+  echo "\n";
   $texteColorise = $couleurs[$couleur] . $texte . $couleurs['reset'];
   foreach (str_split($texteColorise) as $caractere) {
     echo $caractere;
@@ -105,7 +107,17 @@ function jouerScene($sceneId, $couleurs, $nomSauvegarde) {
   clearScreen();
   
   $scene = $aventure['scenes'][$sceneId];
-  afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
+
+  if ($scene['text'] === "blackjack") {
+    startBlackjack();
+  }elseif ($scene['text'] === "tirer") {
+    tirer();
+  }elseif ($scene['text'] === "Refuser") {
+   refuser();
+  }else{
+    afficherTexteAvecDelai($scene['text'], $couleurs, 'bleu');
+  }
+  
   pause(); 
 
   $scenesParcourues[] = ['id' => $sceneId, 'text' => $scene['text'], 'image' => isset($scene['image']) ? $scene['image'] : null];
