@@ -122,7 +122,7 @@
         "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
       }
     },"Alban à tué Henri avec la clé à molette":{
-      "text":"Vous et les invités avez enfermé Alban dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Alabn n'étais pas le tueur. Et que le vrai tueur est introuvable. \nVous avez echoué.",
+      "text":"Vous et les invités avez enfermé Alban dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Alban n'étais pas le tueur. Et que le vrai tueur est introuvable. \nVous avez echoué.",
       "end":true
     },"Montrer la video à Alban":{
       "text":"En voyant la video Alban s'exclame:\n-Mais oui je me souvient de ça ! C'est bon je me souvient ! J'ai pris la clé à mollette pour resserrer le tuyaux qui fuiait sous mon robinet... Oh !... Oh mais je me souvient... je n'ai pas réussis à trouver ma chambre ! J'ai laissé la clé à mollette dans une chambre qui n'étais pas la mienne !",
@@ -150,11 +150,11 @@
       "text":"Refuser"
     },
     "gagne":{
-      "text":"-Bien joué monsieur, vous m'avez battu. Vous savez je ne suis pas sensé vous dire ça mais monsieur Larget m'a confié quelque chose de très précieux et il à dit que quelqu'un risquait de le voler. \n -Vous a-t-il dit qui ? \n -Non monsieur, mais je soupçonne que c'est la cause du meurte. Maintenant, si vous voulez bien m'excuser, je dois aller nettoyer des traces de boues dasn le couloir. \n -Des traces de boue ? dites-vous en vous remémorant les traces de pas que vous aviez vu au pied de la fenêtre d'Henri \n -Oui dans le couloir. \n Sans perdre un instant vous foncez dans le couloir. Vous suivez les traces jusqu'a la porte de la chambre de Vincent. Vous ouvrez la porte et tombez nez à nez avec lui. Vous lui expliquer ce que vous avez trouvez et Vincent s'effondre. Il explique que ce n'éatis pas de sa faute qu'il cherchait juste à faire peur à Henri pour récupérer une clé USB sur laquelle est stocké une structure de données parfaite. Qui révolutionnerais le monde de l'informatique dit-il. Cependant Henri ne voulait pas la lui donner de peur de ce que pouvait devenir sa création si elle tombait entre de mauvaise mains. \n\n BRAVO VOUS AVEZ DÉMASQUÉ LE TUEUR !",
+      "text":"-Bien joué monsieur, vous m'avez battu. Vous savez je ne suis pas censé vous dire ça mais monsieur Larget m'a confié quelque chose de très précieux et il à dit que quelqu'un risquait de le voler. \n -Vous a-t-il dit qui ? \n -Non monsieur, mais je soupçonne que c'est la cause du meurte. Maintenant, si vous voulez bien m'excuser, je dois aller nettoyer des traces de boues dasn le couloir. \n -Des traces de boue ? dites-vous en vous remémorant les traces de pas que vous aviez vu au pied de la fenêtre d'Henri \n -Oui dans le couloir. \n Sans perdre un instant vous foncez dans le couloir. Vous suivez les traces jusqu'a la porte de la chambre de Vincent. Vous ouvrez la porte et tombez nez à nez avec lui. Vous lui expliquer ce que vous avez trouvez et Vincent s'effondre. Il explique que ce n'éatis pas de sa faute qu'il cherchait juste à faire peur à Henri pour récupérer une clé USB sur laquelle est stocké une structure de données parfaite. Qui révolutionnerais le monde de l'informatique dit-il. Cependant Henri ne voulait pas la lui donner de peur de ce que pouvait devenir sa création si elle tombait entre de mauvaise mains. \n\n BRAVO VOUS AVEZ DÉMASQUÉ LE TUEUR !",
       "end": true
     },
     "perd":{
-      "text":"-Dommage monsieur, vous avez perdu. \n Vous sortez du salon et regagnez votre chambre les indices tournent dasn votre tête mais vous n'arrivez pas à en faire sens. A l'exterieur la tempète ce calme et vous entendez des sirènes de polices au loin. Quelqu'un à du les appeler enfin. Malheureusement il ne trouverons jamais le tueur et celui-ci restera introuvable. \n\n VOUS AVEZ ÉCHOUÉ ",
+      "text":"-Dommage monsieur, vous avez perdu. \n Vous sortez du salon et regagnez votre chambre les indices tournent dans votre tête mais vous n'arrivez pas à en faire sens. A l'éxterieur la tempète se calme et vous entendez des sirènes de polices au loin. Quelqu'un à du les appeler enfin. Malheureusement il ne trouverons jamais le tueur et celui-ci restera en liberté. \n\n VOUS AVEZ ÉCHOUÉ ",
       "end": true
     },
     "victory": {
