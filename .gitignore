@@ -1,0 +1,112 @@
+# OS generated files #
+######################
+.DS_Store
+Thumbs.db
+
+# Node.js #
+###########
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Python #
+##########
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pydist
+*.pyc
+.Python
+env/
+venv/
+*.egg-info/
+*.egg
+*.whl
+pip-log.txt
+
+# Java #
+########
+*.class
+*.jar
+*.war
+*.ear
+*.iml
+target/
+
+# Java Maven #
+##############
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+
+# Logs and Reports #
+####################
+logs/
+*.log
+*.out
+*.err
+coverage/
+test-results/
+coverage-final.json
+lcov-report/
+*.lcov
+
+# macOS files #
+###############
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows files #
+#################
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Package Bundler #
+###################
+dist/
+build/
+out/
+*.map
+
+# IDE Specific #
+################
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.code-workspace
+*.editorconfig
+
+# Miscellaneous #
+#################
+.env
+.env.local
+.env.*.local
+*.bak
+*.tmp
+*.swp
+*.temp
+*.log
+
+# Compiled source files #
+#########################
+*.o
+*.so
+*.dll
+*.exe
+
+# Hidden files #
+################
+.*~
