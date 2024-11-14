@@ -77,7 +77,7 @@
       "text":"Vous vous rendez dans le salon.\n-Pourrais-je voir ce qu'a enregistré la caméra dans  le garage ? \nNadia aquiesce et sort son téléphone. \nEn effet la caméra à capté du mouvement à 22h. La qualité de l'image n'est pas très bonne mais on y voit tout de même Alban entrer dans le garage. Celui-ci a regardé les outils attentivement et a pris la clef à molette avant de partir.\nAlban s'exclame:\n-Je me souvient pas du tout de ça ! Je devais être complètement bourré !",
       "options":{
         "Partir trouver des indices dans la chambre d'Henri":"Partir trouver des indices dans la chambre d'Henri",
-        "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
+        "Alban a tué Henri avec la clé à molette":"Alban a tué Henri avec la clé à molette"
       }
     },
     "Partir trouver des indices dans la chambre d'Henri":{
@@ -104,9 +104,9 @@
       "text":"Vous vous rendez dans la chambre de Carole malgré ses plaintes. En ouvrant la porte vous remarquer tout de suite un eclat métallique sous le lit. En vous baissant vous réalisez que c'est en effet la clé à molette. ",
       "options":{
         "Chercher plus d'indices dans la chambre d'Henri":"Chercher plus d'indices dans la chambre d'Henri",
-        "Carole à tué Henri avec la clé à molette":"Carole à tué Henri avec la clé à molette"
+        "Carole a tué Henri avec la clé à molette":"Carole a tué Henri avec la clé à molette"
       }
-    },"Carole à tué Henri avec la clé à molette":{
+    },"Carole a tué Henri avec la clé à molette":{
       "text":"Vous et les invités avez enfermé Carole dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Carole n'étais pas la tueuse. Et que le vrai tueur est introuvable. \n Vous avez echoué.",
       "end":true
     },"Chercher des indices dans la chambre d'Alban":{
@@ -119,9 +119,9 @@
       "text":"Vous vous rendez dans la chambre d'Henri. En ouvrant vous découvrez le corps d'Henri recouvert d'un drap blanc. En vous approchant vous appercevez un tache de sang au niveau de sa tête. Là où l'attaquant à frappé sans aucun doute. Soudain Marie arrive en courant :\n-Regarde ce que j'ai trouvé ! dit elle en lançant une vidéo sur son téléphone.\nSur la vidéo on apperçoit Alban visiblement bourré parler à la caméra. \n-Tu sais ce que je vais faire Marie ? \nLa voix de Marie hors champs répond.\n- Non quoi ? \n- Je vais aller voir dans le garage si y'a pas quelque chose qui va m'aider à réparer la fuite dans ma chambre.\n-Tu veux faire ça maintenant ? \n-Mais ouais ça va être vite fait et là j'ai la motiv'. En plus faut que je me chache d'Henri.\n- Pourquoi ça ? dit Marie en rigolant.\n- Pcq il va encore me parler du curry qu'on doit se faire. Je te jure si il me parle encore de curry je vais commettre un meurte. ",
       "options":{
         "Montrer la video à Alban":"Montrer la video à Alban",
-        "Alban à tué Henri avec la clé à molette":"Alban à tué Henri avec la clé à molette"
+        "Alban a tué Henri avec la clé à molette":"Alban a tué Henri avec la clé à molette"
       }
-    },"Alban à tué Henri avec la clé à molette":{
+    },"Alban a tué Henri avec la clé à molette":{
       "text":"Vous et les invités avez enfermé Alban dans le garage. La police est arrivé le lendemain après la tempète. Plusieur jours après la police à découvert que Alban n'étais pas le tueur. Et que le vrai tueur est introuvable. \nVous avez echoué.",
       "end":true
     },"Montrer la video à Alban":{
